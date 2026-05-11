@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "IMAP Quota Status",
+  "description": "Displays IMAP mailbox quota usage as a color-coded pill in the Thunderbird window and as a progress bar below each IMAP account in the folder pane. Supports configurable color thresholds, poll interval, and bar height. Click the pill to refresh immediately.",
+  "version":      "1.0.0",
+  "author": "Arie Tegenbosch",
+  "developer": {
+    "name": "Arie Tegenbosch",
+    "url": "https://tegenbosch.be"
+  },
+  "homepage_url": "https://tegenbosch.be",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "imap-quota-statusbar@tegenbosch.be",
+      "strict_min_version": "128.0"
+    }
+  },
+  "permissions": [
+    "accountsRead",
+    "storage",
+    "alarms"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "experiment_apis": {
+    "imapQuota": {
+      "schema": "imapQuota-schema.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "paths": [["imapQuota"]],
+        "script": "imapQuota-api.js"
+      }
+    }
+  },
+  "icons": {
+    "48": "icons/icon48.png"
+  }
+}

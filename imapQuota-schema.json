@@ -1,0 +1,57 @@
+[
+  {
+    "namespace": "imapQuota",
+    "functions": [
+      {
+        "name": "getQuota",
+        "type": "function",
+        "async": true,
+        "parameters": [{ "name": "accountId", "type": "string" }]
+      },
+      {
+        "name": "setStatusBarText",
+        "type": "function",
+        "async": false,
+        "parameters": [
+          { "name": "text",    "type": "string" },
+          { "name": "tooltip", "type": "string" }
+        ]
+      },
+      {
+        "name": "updateFolderPaneBars",
+        "type": "function",
+        "async": false,
+        "parameters": [
+          {
+            "name": "quotaMap",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "serverKey":  { "type": "string" },
+                "percentage": { "type": "integer" },
+                "used":       { "type": "integer" },
+                "limit":      { "type": "integer" },
+                "color":      { "type": "string" }
+              }
+            }
+          },
+          { "name": "barHeight", "type": "integer" }
+        ]
+      },
+      {
+        "name": "getRefreshTick",
+        "type": "function",
+        "async": false,
+        "parameters": []
+      }
+    ],
+    "events": [
+      {
+        "name": "onPillClicked",
+        "type": "function",
+        "parameters": []
+      }
+    ]
+  }
+]
