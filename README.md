@@ -86,9 +86,13 @@ thunderbird-imap-quota/
 ├── options.html           # Settings page UI
 ├── options.js             # Settings page logic
 ├── icons/
-│   └── icon48.png
-└── docs/
-    └── technical.md       # Technical implementation documentation
+│   └── icon.svg           # Extension icon (SVG, scales to any resolution)
+├── images/
+│   ├── IMAP-Quota-Bar.jpg # Screenshot — folder pane quota bars
+│   └── IMAP-Quota-Pill.jpg# Screenshot — status pill
+├── docs/
+│   └── technical.md       # Technical implementation documentation
+└── README.md
 ```
 
 ---
