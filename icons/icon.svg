@@ -1,0 +1,45 @@
+<svg width="128" height="128" viewBox="0 0 680 680" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="envGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2a4a"/>
+      <stop offset="100%" stop-color="#0d1a33"/>
+    </linearGradient>
+    <linearGradient id="flapGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#243557"/>
+      <stop offset="100%" stop-color="#1a2a4a"/>
+    </linearGradient>
+    <linearGradient id="shineGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="barClip">
+      <rect x="155" y="430" width="370" height="36" rx="18"/>
+    </clipPath>
+    <clipPath id="envClip">
+      <rect x="120" y="220" width="440" height="300" rx="18"/>
+    </clipPath>
+  </defs>
+  <rect x="60" y="60" width="560" height="560" rx="112" fill="#0f1e38"/>
+  <rect x="60" y="60" width="560" height="560" rx="112" fill="url(#shineGrad)"/>
+  <rect x="60" y="60" width="560" height="560" rx="112" fill="none" stroke="#2a3f6a" stroke-width="4"/>
+  <rect x="120" y="220" width="440" height="300" rx="18" fill="url(#envGrad)" stroke="#6a8fc0" stroke-width="3"/>
+  <g clip-path="url(#envClip)">
+    <line x1="120" y1="520" x2="340" y2="390" stroke="#6a8fc0" stroke-width="2"/>
+    <line x1="560" y1="520" x2="340" y2="390" stroke="#6a8fc0" stroke-width="2"/>
+  </g>
+  <path d="M 138 220 Q 120 220 120 238 L 340 390 L 560 238 Q 560 220 542 220 L 138 220 Z"
+        fill="url(#flapGrad)" stroke="#6a8fc0" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M 138 220 Q 120 220 120 238 L 340 390 L 560 238 Q 560 220 542 220 L 138 220"
+        fill="none" stroke="#8ab0d8" stroke-width="1.5"/>
+  <rect x="155" y="430" width="370" height="36" rx="18" fill="#0a1528" stroke="#1e3060" stroke-width="2"/>
+  <g clip-path="url(#barClip)">
+    <rect x="155" y="430" width="370" height="36" rx="18" fill="#f44336"/>
+    <rect x="155" y="430" width="280" height="36" rx="18" fill="#ffcc32"/>
+    <rect x="155" y="430" width="200" height="36" rx="18" fill="#1976d2"/>
+    <rect x="155" y="430" width="110" height="36" rx="18" fill="#7cb342"/>
+  </g>
+  <rect x="155" y="430" width="370" height="36" rx="18" fill="none" stroke="#0a1528" stroke-width="3"/>
+  <circle cx="480" cy="170" r="18" fill="#f44336" opacity="0.9"/>
+  <circle cx="530" cy="155" r="12" fill="#ffcc32" opacity="0.85"/>
+  <circle cx="572" cy="145" r="8" fill="#7cb342" opacity="0.8"/>
+</svg>
